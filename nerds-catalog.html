@@ -25,7 +25,28 @@
 	</header>
 	<main>
 		<section>
-			<h3>Стоимость:</h3>
+			<div>
+				<h3>Стоимость:</h3>
+				<div class="cost-option">
+					<div class="range-controls">
+						<div class="scale">
+							<div></div>
+						</div>
+					</div>
+					<div class="slider"></div>
+					<div class="slider"></div>
+				</div>
+				<div>
+					<label>
+						от
+						<input type="number" name="min-cost">
+					</label>
+					<label>
+						до
+						<input type="number" name="max-cost">
+					</label>
+				</div>
+			</div>
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 		      <fieldset>
 		        <legend>Сетка:</legend>
@@ -54,14 +75,12 @@
 		        <legend>Особенности:</legend>
 		        <ul>
 		          <li>
-		            
 		            <label>
 		            	<input type="checkbox" name="slider" checked>
 		              Слайдер
 		            </label>
 		          </li>
 		          <li>
-		            
 		            <label>
 		            	<input type="checkbox" name="advantage-block">
 		              Блок преймуществ
@@ -135,19 +154,19 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label>
-              Ваше имя:<br>
+              Ваше имя:
               <input type="text" name="login" placeholder="Имя Фамилия">
             </label>
           </p>
           <p>
             <label>
-              Ваш e-mail:<br>
+              Ваш e-mail:
               <input type="mail" name="mail" placeholder="email@example.com">
             </label>
           </p>
           <p>
             <label>
-              Текст письма:<br>
+              Текст письма:
               <textarea rows="5" placeholder="В свободной форме"></textarea>
             </label>
           </p>

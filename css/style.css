@@ -1,0 +1,262 @@
+body {
+	margin: 0;
+	padding: 0;
+
+	font-family: "Roboto", "Arial", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+a {
+	text-decoration: none;
+}
+
+.navigator {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 30px;
+	background-color: #eeeeee;
+}
+
+.site-navigator,
+.user-navigator {
+	list-style: none;
+}
+
+.catalog {
+	border-bottom: 2px solid #fb565a;
+	padding-bottom: 5px;
+}
+
+.site-navigator a,
+.user-navigator a {
+	color: #000000;
+}
+
+.site-navigator a:hover,
+.site-navigator a:focus,
+.user-navigator a:hover,
+.user-navigator a:focus {
+	color: #fb565a;
+}
+
+.site-navigator a:active,
+.user-navigator a:active {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.services-list {
+	list-style: none;
+}
+
+.services h2 {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.page-header {
+	font-size: 55px;
+	line-height: 55px;
+	text-align: center;
+	vertical-align: middle;
+	padding-bottom: 117px;
+}
+
+.button {
+	width: 160px;
+	height: 50px;
+	background-color: #eeeeee;
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+	text-transform: uppercase;
+	border-radius: 5px;
+	box-shadow: none;
+	border: none;
+}
+
+.button-web {
+	background-color: #fb565a;
+}
+
+.button-applications {
+	background-color: #00ca74;
+}
+
+.button-presentation {
+	background-color: #efc84a;
+}
+
+.button-web:hover,
+.button-web:focus {
+	background-color: #e74246;
+}
+
+.button-applications:hover,
+.button-applications:focus {
+	background-color: #00bc6c;
+}
+
+.button-presentation:hover,
+.button-presentation:focus {
+	background-color: #eab534;
+}
+
+.button-web:active {
+	box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.5);
+	background-color: #d7373b;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.button-applications:active {
+	box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.5);
+	background-color: #00aa62;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.button-presentation:active {
+	box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.5);
+	background-color: #e5a722;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.button-filter {
+	width: 260px;
+	height: 50px;
+	color: #000000;
+	font-weight: 600;
+}
+
+.button-filter:hover,
+.button-filter:focus {
+	background-color: #dfdfdf;
+}
+
+.button-filter:active {
+	box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.5);
+	background-color: #d5d5d5;
+	color: rgba(0, 0, 0, 0.3);s
+}
+
+.about-us h1 {
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.filter-list {
+	list-style: none;
+}
+
+.filter fieldset {
+	border: none;
+}
+
+.filter legend {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+}
+
+.patterns-list {
+	list-style: none;
+}
+
+.patterns-list li {
+	display: block;
+	width: 360px;
+	height: 616px;
+	margin: 10px;
+}
+
+.patterns-list li::before {
+	content: "";
+	display: block;
+	position: relative;
+	width: 360px;
+	height: 40px;
+	background: url(../img/browser.svg) no-repeat;
+	opacity: 0.3;
+}
+
+.patterns-list li:hover,
+.patterns-list li:focus {
+	opacity: 1.0;
+	box-shadow: 0 0 15px -7px rgb(0, 0, 0);
+	border-radius: 5px;
+}
+
+.patterns-list li:hover::before,
+.patterns-list li:focus::before {
+	opacity: 1.0;
+}
+
+.patterns-list li::after {
+	content: "";
+	display: block;
+	position: absolute;
+	width: 360px;
+	height: 231px;
+	background-image: url();
+}
+
+
+
+
+.main-footer {
+	background-color: #ffffff;
+}
+
+.main-footer h2 {
+	font-size: 36px;
+	line-height: 36px;
+}
+
+.main-footer p {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.footer-list {
+	list-style: none;
+}
+
+.social {
+	display: inline-block;
+	color: #ffffff;
+	font-size: 0px;
+	width: 50px;
+	height: 50px;
+	background-color: #e1e1e1;
+	border-radius: 50%;
+	margin: 12px;
+	vertical-align: middle;
+}
+
+.social:hover,
+.social:focus {
+	background-color: #e74246;
+}
+
+.social-vk {
+	background-image: url(../img/vk-icon.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 20px;
+}
+
+.social-fb {
+	background-image: url(../img/fb-icon.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 10px;
+}
+
+.social-insta {
+	background-image: url(../img/insta-icon.svg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 15px;
+}

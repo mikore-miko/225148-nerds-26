@@ -3,24 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
+
+
   <body>
+
+
   	<header>
-  		<nav>
+  		<nav class="navigator">
   			<a href="logo">
   				<img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">
   			</a>
-  			<ul>
+  			<ul class="site-navigator">
   				<li><a href="#">Студия</a></li>
   				<li><a href="#">Клиенты</a></li>
   				<li><a href="nerds-catalog.html">Магазин</a></li>
   				<li><a href="#">Контакты</a></li>
   			</ul>
-  			<img src="img/fb-icon.svg">
-  			<button type="button">Корзина</button>
+        <ul class="user-navigator">
+          <li>
+            <a href="#">
+              <img src="img/cart-icon.svg">
+              Корзина
+            </a>
+          </li>
+        </ul>
   		</nav>
   	</header>
+
+
   	<main>
+
   		<section>
   			<h1>
   				Долго, дорого,<br>
@@ -31,40 +46,43 @@
   				для вашего сайта или мобильного приложения.
   			</p>
   			<button type="button">Узнать больше</button>
-
   			<img src="img/slide1.png" width="698" height="413">
   		</section>
-  		<section>
-  			<ul>
-  				<li>
+
+
+  		<section class="services">
+  			<ul class="services-list">
+  				<li class="services-item">
 		  			<img src="img/illustration-1.png" width="300" height="146">
 		  			<h2>Веб-сайты</h2>	
 		  			<p>
 		  				Мир никогда не будет прежним
 		  				после того как увидит наш сайт!
 		  			</p>
-		  			<button type="button">Заказать</button>
+		  			<button class="button button-web" type="button">Заказать</button>
   				</li>
-  				<li>
+  				<li class="services-item">
 		  			<img src="img/illustration-2.png" width="300" height="146">
 		  			<h2>Приложения</h2>
 		  			<p>
 		  				Покорите топ-10 приложений в
 		  				AppStore и Google Play
 		  			</p>
-		  			<button type="button">Заказать</button>
+		  			<button class="button button-applications" type="button">Заказать</button>
   				</li>
-  				<li>
+  				<li class="services-item">
 		  			<img src="img/illustration-3.png" width="300" height="146">
 		  			<h2>Презентации</h2>
 		  			<p>
 		  				Вы даже не подозреваете,
 		  				насколько вы изумительны!
 		  			</p>
-		  			<button type="button">Заказать</button>
+		  			<button class="button button-presentation" type="button">Заказать</button>
   				</li>
   		</section>
-  		<section>
+
+
+  		<section class="about-us">
   			<h1>
   				Мы — маленькая, но гордая
   				дизайн-студия из Краснодара.
@@ -76,12 +94,14 @@
   			<h3>
   				Выполняем заказы на разработку:
   			</h3>
-  			<ul>
-  				<li>Веб-сайтов любой сложности</li>
-  				<li>Мобильных приложений для iOS и Android</li>
-  				<li>Слайдшоу и видео для корпоративных презентаций</li>
+  			<ul class="about-us-list">
+  				<li class="about-us-item">Веб-сайтов любой сложности</li>
+  				<li class="about-us-item">Мобильных приложений для iOS и Android</li>
+  				<li class="about-us-item">Слайдшоу и видео для корпоративных презентаций</li>
   			</ul>
   		</section>
+
+
   		<section>
   			<img src="img/nerds-illustration.png">
   			<h3>
@@ -98,12 +118,16 @@
   				<li>Минимальная предоплата</li>
   			</ul>
   		</section>
+
+
   		<section>
   			<img src="img/logo-1.png">
   			<img src="img/logo-2.png">
   			<img src="img/logo-3.png">
   			<img src="img/logo-4.png">
   		</section>
+
+
   		<section>
   			<article>
   				<h2>
@@ -120,6 +144,8 @@
   			</article>
   			<img src="img/map.png">
   		</section>
+
+
       <section>
         <h2>Напишите нам</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
@@ -149,17 +175,22 @@
           Закрыть
         </button>
       </section>
+
+
   	</main>
-  	<footer>
+
+
+  	<footer class="main-footer">
   		<h2>Давайте дружить, это выгодно!</h2>
   		<p>Скидка 10% для друзей из социальных сетей.</p>
-  		<div>
-  			<ul>
-  				<li><a href="#">В контакте</a></li>
-  				<li><a href="#">Фейсбук</a></li>
-  				<li><a href="#">Инстаграм</a></li>
+  		<div class="share">
+  			<ul class="footer-list">
+  				<li><a class="social social-vk" href="#">В контакте</a></li>
+  				<li><a class="social social-fb" href="#">Фейсбук</a></li>
+  				<li><a class="social social-insta" href="#">Инстаграм</a></li>
   			</ul>
   		</div>
   	</footer>
+
   </body>
 </html>

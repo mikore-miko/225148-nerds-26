@@ -3,26 +3,38 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Нёрдс</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
+
 	<header>
-		<nav>
+		<nav class="navigator">
   			<a href="logo">
   				<img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">
   			</a>
-  			<ul>
+  			<ul class="site-navigator">
   				<li><a href="#">Студия</a></li>
   				<li><a href="#">Клиенты</a></li>
-  				<li><a href="#">Магазин</a></li>
+  				<li><a class="catalog" href="">Магазин</a></li>
   				<li><a href="#">Контакты</a></li>
   			</ul>
-  			<img src="img/fb-icon.svg">
-  			<button type="button">Корзина</button>
-  			<div>
+	        <ul class="user-navigator">
+	          <li>
+	            <a href="#">
+	              <img src="img/cart-icon.svg">
+	              Корзина
+	            </a>
+	          </li>
+	        </ul>
+  			<div class="page-header">
   				<p>Магазин готовых шаблонов</p>
   			</div>
   		</nav>
 	</header>
+
+
 	<main>
 		<section>
 			<div>
@@ -47,23 +59,25 @@
 					</label>
 				</div>
 			</div>
+
+
 			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
 		      <fieldset>
 		        <legend>Сетка:</legend>
-		        <ul>
-		          <li>
+		        <ul class="filter-list">
+		          <li class="filter-item">
 		            <label>
 		            	<input type="radio" name="grid" value="adaptive" checked>
 		              Адаптивная
 		            </label>
 		          </li>
-		          <li>
+		          <li class="filter-item">
 		            <label>
 		            	<input type="radio" name="grid" value="fixed">
 		              Фиксированная
 		            </label>
 		          </li>
-		          <li>
+		          <li class="filter-item">
 		            <label>
 		            	<input type="radio" name="grid" value="rubber">
 		              Резиновая
@@ -71,9 +85,11 @@
 		          </li>
 		        </ul>
 		      </fieldset>
+
+
 		      <fieldset>
 		        <legend>Особенности:</legend>
-		        <ul>
+		        <ul class="filter-list">
 		          <li>
 		            <label>
 		            	<input type="checkbox" name="slider" checked>
@@ -106,9 +122,13 @@
 		          </li>
 		        </ul>
 		      </fieldset>
-		      <button type="submit">Показать</button>
+
+		      
+		      <button class="button button-filter" type="submit">Показать</button>
 		    </form>	
 		</section>
+
+
 		<section>
 			<h3>Сортировать:</h3>
 			<ul>
@@ -117,8 +137,10 @@
 				<li>По названию</li>
 			</ul>
 		</section>
-		<section>
-			<ul>
+
+
+		<section class="patterns">
+			<ul class="patterns-list">
 				<li><img src="img/img-sedona.jpg"></li>
 				<li><img src="img/img-pink.jpg"></li>
 				<li><img src="img/img-barbershop.jpg"></li>
@@ -131,8 +153,10 @@
 				<li><button type="button">2</button></li>
 				<li><button type="button">3</button></li>
 			</ul>
-			<button type="button">Следующая</button>
+			<button class="button" type="button">Следующая</button>
 		</section>
+
+
 		<section>
   			<article>
   				<h2>
@@ -179,16 +203,19 @@
         </button>
       </section>
 	</main>
-	<footer>
-		<h2>Давайте дружить, это выгодно!</h2>
+
+
+	<footer class="main-footer">
+  		<h2>Давайте дружить, это выгодно!</h2>
   		<p>Скидка 10% для друзей из социальных сетей.</p>
-  		<div>
-  			<ul>
-  				<li><a href="#">В контакте</a></li>
-  				<li><a href="#">Фейсбук</a></li>
-  				<li><a href="#">Инстаграм</a></li>
+  		<div class="share">
+  			<ul class="footer-list">
+  				<li><a class="social social-vk" href="#">В контакте</a></li>
+  				<li><a class="social social-fb" href="#">Фейсбук</a></li>
+  				<li><a class="social social-insta" href="#">Инстаграм</a></li>
   			</ul>
   		</div>
-	</footer>
+  	</footer>
+
 </body>
 </html>

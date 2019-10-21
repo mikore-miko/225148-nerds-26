@@ -36,26 +36,26 @@
 
 
 	<main>
+
+
 		<section>
-			<div>
+			<div class="cost">
 				<h3>Стоимость:</h3>
 				<div class="cost-option">
 					<div class="range-controls">
-						<div class="scale">
-							<div></div>
-						</div>
+						<div class="scale"></div>
 					</div>
-					<div class="slider"></div>
-					<div class="slider"></div>
+					<div class="slider slider-left"></div>
+					<div class="slider slider-right"></div>
 				</div>
-				<div>
+				<div class="price-controls">
 					<label>
 						от
-						<input type="number" name="min-cost">
+						<input type="number" name="min-cost" value="0">
 					</label>
 					<label>
 						до
-						<input type="number" name="max-cost">
+						<input type="number" name="max-cost" value="15000">
 					</label>
 				</div>
 			</div>
@@ -129,36 +129,110 @@
 		</section>
 
 
-		<section>
+		<section class="sorting">
 			<h3>Сортировать:</h3>
-			<ul>
-				<li>По цене</li>
-				<li>По типу</li>
-				<li>По названию</li>
+			<ul class="sorting-list">
+				<li class="sorting-item"><a href="#">По цене</a></li>
+				<li class="sorting-item"><a href="#">По типу</a></li>
+				<li class="sorting-item"><a href="#">По названию</a></li>
+				<li>
+					<div class="down">
+						<a href="#">
+							<svg width="10px" height="10px">
+								<polygon points="0,0 5,10 10,0" fill="black"/>
+							</svg>
+						</a>
+					</div>
+				</li>
+				<li>
+					<div class="up">
+						<a href="#">
+							<svg width="10px" height="10px">
+								<polygon points="0,10 5,0 10,10" fill="black"/>
+							</svg>
+						</a>
+					</div>
+				</li>
 			</ul>
 		</section>
 
 
 		<section class="patterns">
 			<ul class="patterns-list">
-				<li><img src="img/img-sedona.jpg"></li>
-				<li><img src="img/img-pink.jpg"></li>
-				<li><img src="img/img-barbershop.jpg"></li>
-				<li><img src="img/img-mishka.jpg"></li>
-				<li><img src="img/img-aplus.jpg"></li>
-				<li><img src="img/img-kvast.jpg"></li>
+				<li>
+					<div class="patterns-menu">
+						<div class="patterns-info">
+							<h3><a href="#">Sedona</a></h3>
+							<p>Информационный сайт для туристов</p>
+							<button class="button button-patterns" type="button">9 900 РУБ.</button>
+						</div>
+					</div>
+					<img src="img/img-sedona.jpg">
+				</li>
+				<li>
+					<div class="patterns-menu">
+						<div class="patterns-info">
+							<h3><a href="#">Pink app</a></h3>
+							<p>Продуктовый лендинг приложения для iOS и Android</p>
+							<button class="button button-patterns" type="button">9 900 РУБ.</button>
+						</div>
+					</div>
+					<img src="img/img-pink.jpg">
+				</li>
+				<li>
+					<div class="patterns-menu">
+						<div class="patterns-info">
+							<h3><a href="#">Barbershop</a></h3>
+							<p>Сайт салона красоты.Для мужчин, да.</p>
+							<button class="button button-patterns" type="button">9 900 РУБ.</button>
+						</div>
+					</div>
+					<img src="img/img-barbershop.jpg">
+				</li>
+				<li>
+					<div class="patterns-menu">
+						<div class="patterns-info">
+							<h3><a href="#">Mishka</a></h3>
+							<p>Интернет-магазин вязаных игрушек</p>
+							<button class="button button-patterns" type="button">9 900 РУБ.</button>
+						</div>
+					</div>
+					<img src="img/img-mishka.jpg">
+				</li>
+				<li>
+					<div class="patterns-menu">
+						<div class="patterns-info">
+							<h3><a href="#">A plus</a></h3>
+							<p>Лендинг курсов повышения квалификации</p>
+							<button class="button button-patterns" type="button">9 900 РУБ.</button>
+						</div>
+					</div>
+					<img src="img/img-aplus.jpg">
+				</li>
+				<li>
+					<div class="patterns-menu">
+						<div class="patterns-info">
+							<h3><a href="#">Кваст</a></h3>
+							<p>Промо-сайт производителя крафтового кваса</p>
+							<button class="button button-patterns" type="button">9 900 РУБ.</button>
+						</div>
+					</div>
+					<img src="img/img-kvast.jpg">
+				</li>
 			</ul>
-			<ul>
-				<li><button type="button">1</button></li>
-				<li><button type="button">2</button></li>
-				<li><button type="button">3</button></li>
+
+			<ul class="page-list">
+				<li><button class="button button-page button-page-one" type="button">1</button></li>
+				<li><button class="button button-page" type="button">2</button></li>
+				<li><button class="button button-page" type="button">3</button></li>
 			</ul>
-			<button class="button" type="button">Следующая</button>
+
+			<button class="button button-page button-next" type="button">Следующая</button>
 		</section>
 
 
-		<section>
-  			<article>
+		<section class="map">
+  			<article class="write-to-us">
   				<h2>
   					NЁRDS DESIGN STUDIO
   				</h2>
@@ -169,39 +243,37 @@
   				<p>
   					тел. +7 (812) 275-75-75
   				</p>
-  				<button type="button">Напишите нам</button>
+  				<button class="button button-patterns" type="button">Напишите нам</button>
   			</article>
   			<img src="img/map.png">
   		</section>
-  		<section>
-        <h2>Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label>
-              Ваше имя:
-              <input type="text" name="login" placeholder="Имя Фамилия">
-            </label>
-          </p>
-          <p>
-            <label>
-              Ваш e-mail:
-              <input type="mail" name="mail" placeholder="email@example.com">
-            </label>
-          </p>
-          <p>
-            <label>
-              Текст письма:
-              <textarea rows="5" placeholder="В свободной форме"></textarea>
-            </label>
-          </p>
-          <button type="submit">
-            Отправить
-          </button>
-        </form>
-        <button type="button">
-          Закрыть
-        </button>
-      </section>
+
+
+  		<section class="write-modul">
+	        <h2>Напишите нам</h2>
+	        <form action="https://echo.htmlacademy.ru" method="post">
+	          <p>
+	            <label for="login">Ваше имя:</label>
+	            <input type="text" name="login" id="login" placeholder="Имя Фамилия">
+	          </p>
+	          <p>
+	            <label for="mail">Ваш e-mail:</label>
+	            <input type="mail" name="mail" id="mail" placeholder="email@example.com">
+	          </p>
+	          <p>
+	            <label for="latter">Текст письма:</label>
+	            <textarea rows="5" id="latter" placeholder="В свободной форме"></textarea>
+	          </p>
+	          <button class="button button-write-modul" type="submit">
+	            Отправить
+	          </button>
+	        </form>
+        	<button type="button">
+          		Закрыть
+        	</button>
+      	</section>
+
+
 	</main>
 
 

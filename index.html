@@ -12,46 +12,48 @@
 
 
   	<header>
-  		<nav class="navigator">
-  			<a href="logo">
-  				<img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">
-  			</a>
-  			<ul class="site-navigator">
-  				<li><a href="#">Студия</a></li>
-  				<li><a href="#">Клиенты</a></li>
-  				<li><a href="nerds-catalog.html">Магазин</a></li>
-  				<li><a href="#">Контакты</a></li>
-  			</ul>
-        <ul class="user-navigator">
-          <li>
+
+      <nav class="main-nav">
+    		<div class="navigator">
+    			<a class="logo" href="logo">
+    				<img src="img/nerds-logo.svg" width="160" height="65" alt="логотип">
+    			</a>
+    			<ul class="site-navigator">
+    				<li><a href="#">Студия</a></li>
+    				<li><a href="#">Клиенты</a></li>
+    				<li><a href="nerds-catalog.html">Магазин</a></li>
+    				<li><a href="#">Контакты</a></li>
+    			</ul>
+          <div class="user-navigator">
             <a href="#">
               <img src="img/cart-icon.svg">
-              Корзина
+              <p>Корзина</p>
             </a>
-          </li>
-        </ul>
-  		</nav>
+          </div>
+    		</div>
+      
+
+        <div class="gallery">
+          <div class="gallery-text">
+            <h1>
+              Долго, дорого,<br>
+              скрупулезно.
+            </h1>
+            <p>
+              Математически выверенный дизайн <br>
+              для вашего сайта или мобильного приложения.
+            </p>
+            <button class="button button-gallery" type="button">Узнать больше</button>
+          </div>
+            <img src="img/slide1.png" width="698" height="413">
+        </div>
+
+      </nav>
+
   	</header>
 
 
   	<main>
-
-  		<section>
-        <div class="gallery">
-          <div class="gallery-text">
-      			<h1>
-      				Долго, дорого,<br>
-      				скрупулезно.
-      			</h1>
-      			<p>
-      				Математически выверенный дизайн <br>
-      				для вашего сайта или мобильного приложения.
-      			</p>
-      			<button class="button button-gallery" type="button">Узнать больше</button>
-          </div>
-  			    <img src="img/slide1.png" width="698" height="413">
-        </div>
-  		</section>
 
 
   		<section class="services">
@@ -83,8 +85,10 @@
 		  			</p>
 		  			<button class="button button-presentation" type="button">Заказать</button>
   				</li>
+        </ul>
   		</section>
 
+      <hr color="#eeeeee" width="1160px">
 
   		<section class="about-us">
         <div class="about-us-text">
@@ -112,9 +116,9 @@
             с 2004 года Любим точность во всем:
           </h3>
           <ul class="figures-list">
-            <li class="figures-item">146%</li>
-            <li class="figures-item">100%</li>
-            <li class="figures-item">50%</li>
+            <li class="figures-item">146</li>
+            <li class="figures-item">100</li>
+            <li class="figures-item">50</li>
           </ul>
           <ul class="figures-list">
             <li class="figures-caption">Уровень<br> самоотдачи</li>
@@ -124,9 +128,10 @@
         </div>
   		</section>
 
+      <hr color="#eeeeee" width="1160px">
 
   		<section class="partners">
-        <ul class="partners list">
+        <ul class="partners-list">
   			 <li class="partners-item"><img src="img/logo-1.png" width="199"></li>
   			 <li class="partners-item"><img src="img/logo-2.png" width="209"></li>
   			 <li class="partners-item"><img src="img/logo-3.png" width="185"></li>
@@ -134,6 +139,9 @@
         </ul>
   		</section>
 
+      <hr color="#eeeeee" width="1160px">
+
+      </main>
 
   		<section class="map">
   			<article class="write-to-us">
@@ -153,37 +161,11 @@
   		</section>
 
 
-      <section class="write-modul">
-          <h2>Напишите нам</h2>
-          <form action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label for="login">Ваше имя:</label>
-              <input type="text" name="login" id="login" placeholder="Имя Фамилия">
-            </p>
-            <p>
-              <label for="mail">Ваш e-mail:</label>
-              <input type="mail" name="mail" id="mail" placeholder="email@example.com">
-            </p>
-            <p>
-              <label for="latter">Текст письма:</label>
-              <textarea rows="5" id="latter" placeholder="В свободной форме"></textarea>
-            </p>
-            <button class="button button-write-modul" type="submit">
-              Отправить
-            </button>
-          </form>
-          <button type="button">
-              Закрыть
-          </button>
-        </section>
-
-
-  	</main>
-
-
   	<footer class="main-footer">
-  		<h2>Давайте дружить, это выгодно!</h2>
-  		<p>Скидка 10% для друзей из социальных сетей.</p>
+      <div class="footer-text">
+  		  <h2>Давайте дружить, это выгодно!</h2>
+  		  <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
   		<div class="share">
   			<ul class="footer-list">
   				<li><a class="social social-vk" href="#">В контакте</a></li>
@@ -192,6 +174,33 @@
   			</ul>
   		</div>
   	</footer>
+
+
+
+      <section class="write-modul">
+          <h2>Напишите нам</h2>
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <p class="login">
+              <label for="login">Ваше имя:</label>
+              <input type="text" name="login" id="login" placeholder="Имя Фамилия">
+            </p>
+            <p class="mail">
+              <label for="mail">Ваш e-mail:</label>
+              <input type="mail" name="mail" id="mail" placeholder="email@example.com">
+            </p>
+            <p class="latter">
+              <label for="latter">Текст письма:</label>
+              <textarea rows="5" id="latter" placeholder="В свободной форме"></textarea>
+            </p>
+            <button class="button button-write-modul" type="submit">
+              Отправить
+            </button>
+          </form>
+          <button type="button" class="button-close"></button>
+      </section>
+
+
+      
 
   </body>
 </html>
